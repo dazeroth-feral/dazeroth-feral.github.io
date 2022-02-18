@@ -56,8 +56,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	color: gray;
 }
 
-img{
-	width: 100%;
+.OC10DPS{
+	border: solid 4px black;
+	border-radius: 10px;
 }
 
 .content{
@@ -68,7 +69,8 @@ img{
 	border-bottom: solid 4px black;
 	border-radius: 0 0 10px 10px;
 	padding: 4px;
-	max-width: 1000px;
+	min-width: 800px;
+	max-width: 800px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -88,6 +90,7 @@ img{
 	}
 	.content{
 		max-width: 770px;
+		min-width: 550px;
 	}
 	.spoiler-p{
 		max-width: 750px;
@@ -100,6 +103,7 @@ img{
 	}
 	.content{
 		max-width: 550px;
+		min-width: 0px;
 	}
 	.spoiler-p{
 		max-widht: 530px;
