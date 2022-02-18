@@ -1,0 +1,119 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background-image: url(../img/fon.jpg);
+	background-attachment: fixed;
+	overflow: hidden;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/****************************************************/
+
+.b{
+	font-weight: bold;
+}
+
+.header{
+	background-color: #0f1028;
+	border: solid 4px black;
+	border-radius: 10px;
+	padding: 4px;
+	font-family: "Comic Sans MS", sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: gray;
+}
+
+img{
+	width: 100%;
+}
+
+.content{
+	font-family: "Comic Sans MS", sans-serif;
+	background-color: lightgray;
+	border-right: solid 4px black;
+	border-left: solid 4px black;
+	border-bottom: solid 4px black;
+	border-radius: 0 0 10px 10px;
+	padding: 4px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	width: 100%;
+	margin:  4px auto;
+}
+
+@media(max-width: 1200px){
+	.wrapper{
+		max-width: 970px;
+	}
+	.content{
+		max-width: 770px;
+	}
+	.spoiler-p{
+		max-width: 750px;
+	}
+}
+
+@media(max-width: 992px){
+	.wrapper{
+		max-width: 750px;
+	}
+	.content{
+		max-width: 550px;
+	}
+	.spoiler-p{
+		max-widht: 530px;
+	}
+}
+
+@media(max-width: 550px){
+	.wrapper{
+		max-width: none;
+	}
+	.content{
+		max-width: none;
+	}
+	.spoiler-p{
+		max-width: none;
+	}
+}
