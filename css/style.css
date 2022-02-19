@@ -199,7 +199,7 @@ img{
 }
 
 .headerWebSiteName{
-	margin-left: 5px;
+	margin-left: 10px;
 	color: gray;
 }
 .headerMenu{
@@ -211,4 +211,12 @@ img{
 }
 .colorBlack{
 	color: black;
+}
+
+.aColorGray{
+	color: gray;
+	transition: color .5s linear;
+}
+.aColorGray:hover{
+	color:  red;
 }
