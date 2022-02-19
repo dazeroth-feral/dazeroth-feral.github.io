@@ -25,7 +25,28 @@ html,body{
 	-webkit-text-size-adjust: 100%;
 	background-image: url(../img/fons/fon.jpg);
 	background-attachment: fixed;
-	overflow: hidden;
+	background-size: 100% 100%;
+/*	overflow: hidden;*/
+}
+::-webkit-scrollbar { /* chrome based */
+    width: 4px;  /* ширина scrollbar'a */
+}
+::-webkit-scrollbar-track {
+    background: #999; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #222; 
 }
 input,button,textarea{font-family:inherit;}
 
@@ -48,15 +69,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .header{
+	margin-top: -4px;
 	background-color: #0f1028;
 	border: solid 4px black;
+	border-top: 0;
 	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 	padding: 4px;
 	font-family: "Comic Sans MS", sans-serif;
 	font-size: 24px;
 	font-weight: bold;
-	text-align: center;
 	color: gray;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .content{
@@ -82,7 +109,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin:  4px auto;
 }
 
+img{
+	max-width: 100%;
+}
+
 @media(max-width: 1200px){
+	.header{
+
+	}
 	.wrapper{
 		max-width: 970px;
 	}
@@ -96,6 +130,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 @media(max-width: 992px){
+	.header{
+		font-size: 20px;
+	}
 	.wrapper{
 		max-width: 750px;
 	}
@@ -109,10 +146,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 @media(max-width: 550px){
+	.header{
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-radius: 0;
+		font-size: 0;
+		display: block;
+		text-align: center;
+	}
+	.headerWebSiteName{
+		margin-left: 0;
+		font-size: 24px;
+	}
+	.headerMenu{
+		opacity: 0;
+	}
 	.wrapper{
 		max-width: none;
 	}
 	.content{
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		border-radius: 0;
+
 		max-width: none;
 	}
 	.spoiler-p{
@@ -134,8 +192,23 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	margin-bottom: 10px;
 	margin-top: 30px;
 	display: block;
-	width: 250px;
-	height: 20px;
+	max-width: 250px;
+	max-height: 20px;
 	text-align: center;
 	font-size: 16px;
+}
+
+.headerWebSiteName{
+	margin-left: 5px;
+	color: gray;
+}
+.headerMenu{
+	margin-right: 10px;
+}
+
+.colorGray{
+	color: gray;
+}
+.colorBlack{
+	color: black;
 }
