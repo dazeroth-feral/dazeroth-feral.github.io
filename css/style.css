@@ -113,6 +113,86 @@ img{
 	max-width: 100%;
 }
 
+.nameAndA{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bFS{
+	font-weight: bold;
+	font-size: 20px;
+	border-bottom: solid 2px #555;
+}
+
+.headerWebSiteName{
+	margin-left: 10px;
+	color: gray;
+}
+.headerMenu{
+	margin-right: 10px;
+}
+
+.colorGray{
+	color: gray;
+}
+.colorBlack{
+	color: black;
+}
+
+.aColorGray{
+	color: gray;
+	transition: color .5s linear;
+}
+.aColorGray:hover{
+	color:  red;
+}
+
+.moreInfo{
+	font-size: 20px;
+	color: red;
+	margin-right: 10px;
+}
+
+.treadContent{
+	margin-top: 10px;
+}
+
+.utilityWowImg,.studyFeralImg{
+	margin-right: 10px;
+}
+
+.studyFeral{
+	margin-top: 8px;
+}
+
+.morpherImg{
+	border: solid 4px black;
+	border-radius: 10px;
+}
+
+.downloadButt{
+	position: relative;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	border: solid 2px blue;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	display: block;
+	max-width: 250px;
+	max-height: 20px;
+	text-align: center;
+	font-size: 16px;
+}
+.utilityWowImg,.studyFeralImg{
+	max-width: 220px;
+	max-height: 125px;
+	border: solid 2px black;
+	border-radius: 10px;	
+}
+
+
 @media(max-width: 1200px){
 	.header{
 
@@ -130,6 +210,16 @@ img{
 }
 
 @media(max-width: 992px){
+	.utilityWowImg,.studyFeralImg{
+		width: 180px;
+		height: 100px;
+	}
+	.treadContent{
+		font-size: 14px;
+	}
+	.bFS,.moreInfo{
+		font-size: 16px;
+	}
 	.header{
 		font-size: 20px;
 	}
@@ -146,6 +236,25 @@ img{
 }
 
 @media(max-width: 550px){
+	.utilityWowImg,.studyFeralImg{
+		width: 150px;
+		height: 120px;
+	}
+	.treadContent{
+		font-size: 12px;
+	}
+	.bFS,.moreInfo{
+		padding-bottom: 4px;
+		font-size: 15px;
+		border: 0;
+		margin: 0;
+	}
+	.nameAndA{
+		flex-direction: column;
+	}
+	.studyFeralA{
+		right: 100%;
+	}
 	.header{
 		border-top: 0;
 		border-left: 0;
@@ -176,47 +285,4 @@ img{
 	.spoiler-p{
 		max-width: none;
 	}
-}
-
-.morpherImg{
-	border: solid 4px black;
-	border-radius: 10px;
-}
-
-.downloadButt{
-	position: relative;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	border: solid 2px blue;
-	border-radius: 10px;
-	margin-bottom: 10px;
-	margin-top: 30px;
-	display: block;
-	max-width: 250px;
-	max-height: 20px;
-	text-align: center;
-	font-size: 16px;
-}
-
-.headerWebSiteName{
-	margin-left: 10px;
-	color: gray;
-}
-.headerMenu{
-	margin-right: 10px;
-}
-
-.colorGray{
-	color: gray;
-}
-.colorBlack{
-	color: black;
-}
-
-.aColorGray{
-	color: gray;
-	transition: color .5s linear;
-}
-.aColorGray:hover{
-	color:  red;
 }
