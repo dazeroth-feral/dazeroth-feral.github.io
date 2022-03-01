@@ -55,7 +55,6 @@ button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
-ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
@@ -66,6 +65,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .fontSize{
 	font-size: 20px;
+}
+.br{
+	margin-bottom: 10px;
+}
+.brbr{
+	margin-bottom: 20px;
+}
+
+li{
+	margin-top: 4px;
+	margin-left: 28px;
+}
+
+img{
+	width: 100%;
 }
 
 .header{
@@ -107,10 +121,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	max-width: 1200px;
 	width: 100%;
 	margin:  4px auto;
-}
-
-img{
-	max-width: 100%;
 }
 
 .nameAndA{
@@ -158,14 +168,6 @@ img{
 	margin-top: 10px;
 }
 
-.utilityWowImg,.studyFeralImg{
-	margin-right: 10px;
-}
-
-.studyFeral{
-	margin-top: 8px;
-}
-
 .morpherImg{
 	border: solid 4px black;
 	border-radius: 10px;
@@ -185,13 +187,15 @@ img{
 	text-align: center;
 	font-size: 16px;
 }
-.utilityWowImg,.studyFeralImg{
+.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg{
 	max-width: 220px;
 	width: 100%;
 	max-height: 125px;
 	height: 100%;
 	border: solid 2px black;
 	border-radius: 10px;	
+	margin-right: 10px;
+	margin-bottom: 10px;
 }
 
 #passwordWrite{
@@ -212,10 +216,27 @@ img{
 	text-align: center;
 }
 
-@media(max-width: 1200px){
-	.header{
+.videosPH{
+	max-width: 560px;
+	max-height: 340px;
+	border: solid 4px black;
+	border-radius: 15px;
+}
 
-	}
+.feralCatPVEGuidImg{
+	width: 100%;
+	border: solid 4px black;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.border{
+	border: solid 2px black;
+	border-radius: 10px;
+	padding: 4px;
+}
+
+@media(max-width: 1200px){
 	.wrapper{
 		max-width: 970px;
 	}
@@ -229,10 +250,13 @@ img{
 }
 
 @media(max-width: 992px){
+	.fontSize{
+		font-size: 20px;
+	}
 	.aColorGray{
 		font-size: 16px;
 	}
-	.utilityWowImg,.studyFeralImg{
+	.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg{
 		width: 180px;
 		height: 100px;
 	}
@@ -249,6 +273,7 @@ img{
 		max-width: 750px;
 	}
 	.content{
+		font-size: 14px;
 		max-width: 550px;
 		min-width: 0px;
 	}
@@ -258,7 +283,10 @@ img{
 }
 
 @media(max-width: 550px){
-	.utilityWowImg,.studyFeralImg{
+	.fontSize{
+		font-size: 20px;
+	}
+	.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg{
 		width: 150px;
 		height: 120px;
 	}
@@ -274,9 +302,6 @@ img{
 	.nameAndA{
 		flex-direction: column;
 	}
-	.studyFeralA{
-		right: 100%;
-	}
 	.header{
 		border-top: 0;
 		border-left: 0;
@@ -291,7 +316,7 @@ img{
 		font-size: 24px;
 	}
 	.headerMenu{
-		opacity: 0;
+		display: none;
 	}
 	.wrapper{
 		max-width: none;
@@ -301,7 +326,7 @@ img{
 		border-left: 0;
 		border-right: 0;
 		border-radius: 0;
-
+		font-size: 12px;
 		max-width: none;
 	}
 	.spoiler-p{
