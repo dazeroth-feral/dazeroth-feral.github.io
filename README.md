@@ -1,2 +1,2 @@
-# dazeroth.github.io
+# dazeroth-feral.github.io
 Мой веб-сайт
