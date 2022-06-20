@@ -23,7 +23,7 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	background-image: url(../img/fons/fon.jpg);
+	background-image: url(../img/fons/fonPC.jpg);
 	background-attachment: fixed;
 	background-size: 100% 100%;
 /*	overflow: hidden;*/
@@ -69,17 +69,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .br{
 	margin-bottom: 10px;
 }
-.brbr{
-	margin-bottom: 20px;
-}
 
 li{
 	margin-top: 4px;
 	margin-left: 28px;
-}
-
-img{
-	width: 100%;
 }
 
 .header{
@@ -189,7 +182,7 @@ img{
 	text-align: center;
 	font-size: 16px;
 }
-.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg{
+.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg,.borderImg{
 	max-width: 220px;
 	width: 100%;
 	max-height: 125px;
@@ -197,7 +190,6 @@ img{
 	border: solid 2px black;
 	border-radius: 10px;	
 	margin-right: 10px;
-	margin-bottom: 10px;
 }
 
 #passwordWrite{
@@ -305,6 +297,10 @@ img{
 	background-color: #CFD8DC;
 }
 
+.imgOnFeralCatPveGuid{
+	width: 100%;
+}
+
 #menuToggle:checked ~ .menuButton > span {
   transform: rotate(45deg);
 }
@@ -335,13 +331,16 @@ img{
 }
 
 @media(max-width: 992px){
+	#webSiteName{
+		margin: 4px 0 0 0;
+	}
 	.fontSize{
 		font-size: 20px;
 	}
 	.aColorGray{
 		font-size: 16px;
 	}
-	.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg{
+	.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg,.borderImg{
 		width: 180px;
 		height: 100px;
 	}
@@ -368,6 +367,12 @@ img{
 }
 
 @media(max-width: 550px){
+	body{
+		background-image: url(../img/fons/fonMob.jpg);
+	}
+	.flags{
+		padding: 0;
+	}
 	.headerWebSiteName{
 		display: flex;
 		display: row;
@@ -379,7 +384,7 @@ img{
 	.fontSize{
 		font-size: 20px;
 	}
-	.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg{
+	.utilityWowImg,.studyFeralImg,.feralPVEGuideImg,.passwordImg,.borderImg{
 		width: 150px;
 		height: 120px;
 	}
@@ -415,6 +420,7 @@ img{
 		max-width: none;
 	}
 	.content{
+		width: 100%;
 		border-top: 0;
 		border-left: 0;
 		border-right: 0;
